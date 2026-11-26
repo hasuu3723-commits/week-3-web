@@ -1,0 +1,193 @@
+
+/* =================================
+   BUDGET TRACKER - WEEK 3 CSS
+================================= */
+
+/* 1. Color Palette */
+:root {
+    --primary: #1E3A5F;
+    --secondary: #2ECC71;
+    --background: #F4F7FB;
+    --white: #FFFFFF;
+    --text: #263445;
+    --muted: #718096;
+    --border: #DCE4ED;
+    --table-row: #F0F6F9;
+}
+
+/* 2. Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    padding: 30px;
+    line-height: 1.6;
+}
+
+/* 3. Main Page Heading */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 6px solid var(--secondary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 4. Section Headings */
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* 5. Form Card */
+form {
+    background-color: var(--white);
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* 6. Form Labels */
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* 7. Form Inputs */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    background-color: #FAFCFE;
+    color: var(--text);
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.15);
+}
+
+/* 8. Buttons */
+button {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* 9. Expense Table Card */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+/* 10. Table Header */
+thead {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+th {
+    padding: 16px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+}
+
+/* 11. Table Cells */
+td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+/* 12. Alternating Table Rows */
+tbody tr:nth-child(even) {
+    background-color: var(--table-row);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--white);
+}
+
+/* 13. Table Hover Effect */
+tbody tr:hover {
+    background-color: #E2F5EA;
+    transition: 0.3s;
+}
+
+/* 14. Other Elements */
+p {
+    color: var(--muted);
+    margin-bottom: 12px;
+}
+
+/* 15. Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+        padding: 18px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 10px 8px;
+    }
+}
